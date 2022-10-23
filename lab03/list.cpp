@@ -80,7 +80,7 @@ void List::remove(int d, DeleteFlag df){
 
             while(temp){
                 if(temp->value < d){
-                    //torles
+                    delete first;
                 }
                 temp = temp->next;
             }
@@ -92,7 +92,7 @@ void List::remove(int d, DeleteFlag df){
 
             while(temp){
                 if(temp->value == d){
-                    //torles
+                    delete first;
                 }
                 temp = temp->next;
             }
@@ -104,7 +104,7 @@ void List::remove(int d, DeleteFlag df){
 
             while(temp){
                 if(temp->value > d){
-                    //torles
+                    delete first;
                 }
                 temp = temp->next;
             }

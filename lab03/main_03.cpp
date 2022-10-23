@@ -1,5 +1,6 @@
 #include <iostream>
 #include "list.h"
+#include "stack.h"
 
 int main() {
 
@@ -31,6 +32,17 @@ int main() {
     }catch(std::invalid_argument& e){
         std::cout << e.what();
     }
+
+
+    Stack stack;
+    for (int i = 0; i < 50; i++) {
+        stack.push(i);
+    }
+    for (int i = 0; i < 51; i++) {
+        std::cout << stack.pop() << " " << i << std::endl;
+    }
+    stack.isEmpty();
+
 
     return 0;
 }
