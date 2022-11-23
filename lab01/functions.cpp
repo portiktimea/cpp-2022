@@ -84,10 +84,14 @@ double sum(){
     string words;
     double sum=0;
     getline(cin, words);
+    int n = words.length();
     istringstream iss(words);
     double number;
-    while(iss >> number){
-        sum += number;
+    while(n){
+        if(iss >> number){
+            sum += number;
+        }
+        n--;
     }
     return sum;
 }
@@ -166,3 +170,5 @@ string capitalizeWords(string text){
     cout << endl;
     return text;
 }
+
+

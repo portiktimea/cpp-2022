@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
     //test_distance();
     //test_f5();
     //test_function6();
-    testFunctions();
+    //testFunctions();
 
     return 0;
 }

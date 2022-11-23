@@ -22,4 +22,5 @@ string code(string text);
 string decode(string text);
 string capitalizeWords(string text);
 
+
 #endif //CPP_2022_FUNCTIONS_H

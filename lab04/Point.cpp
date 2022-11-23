@@ -28,3 +28,22 @@ double Point::distanceTo(const Point &point) const {
 void Point::print() const{
     std::cout << this->x << this->y << std::endl;
 }
+
+int Point::counter{0};
+
+Point::Point(const Point &point) {
+    this->x = point.x;
+    this->y = point.y;
+    ++this->counter;
+}
+
+Point::~Point() {
+    --this->counter;
+}
+
+int Point::getCounter() {
+    return counter;
+}
+
+
+

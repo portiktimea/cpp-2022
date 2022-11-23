@@ -24,28 +24,39 @@ int main() {
 //        cout<<v[ i ]<<" ";
 //    }
 //    cout<<endl;
-
-
-
-
-//    int x[100];
-//    int n = 10;
-//    cout<<"x = [";
-//    for( int i=0; i<n; ++i ){
-//        x[i] = rand() % MAX;
-//        cout<<x[i]<<" ";
+//
+//
+//    vector<string> fruits {"apple","melon"};
+//    fruits.push_back("pear"); fruits.push_back("nut");
+//    // Iterate over the elements in the vector and print them
+//    for (auto it = fruits.cbegin(); it != fruits.cend(); ++it) {
+//        cout << *it << endl;
 //    }
-//    cout << "]" <<endl;
-//    cout << "Legkisebb : " << *min_element(x, x+n) << endl;
-//    vector<int> v;
-//    v.reserve(100);
-//    cout<<"v = [";
-//    for( int i=0; i<n; ++i ){
-//        v.emplace_back( rand() % MAX );
-//        cout<<v[ i]<<" ";
+//    //Print the elements again using C++11 range-based for loop
+//    for (auto& str : fruits) {
+//        cout << str << endl;
 //    }
-//    cout << "]" <<endl;
-//    cout << "Legnagyobb: " << *max_element(v.begin(),v.end()) << endl;
+
+
+
+    int x[100];
+    int n = 10;
+    cout<<"x = [";
+    for( int i=0; i<n; ++i ){
+        x[i] = rand() % MAX;
+        cout<<x[i]<<" ";
+    }
+    cout << "]" <<endl;
+    cout << "Legkisebb : " << *min_element(x, x+n) << endl;
+    vector<int> v;
+    v.reserve(100);
+    cout<<"v = [";
+    for( int i=0; i<n; ++i ){
+        v.emplace_back( rand() % MAX );
+        cout<<v[ i]<<" ";
+    }
+    cout << "]" <<endl;
+    cout << "Legnagyobb: " << *max_element(v.begin(),v.end()) << endl;
 
 
 
@@ -72,9 +83,12 @@ int main() {
         cout << setw(10) << pSet.numDistances() << " ";
         cout << setw(16) << pSet.numDistinctDistances() << endl;
         k = k << 1;
-
     }
 
+    PointSet pset1(10);
+    cout<<"#points: " <<Point::getCounter()<<endl;
+    PointSet pset2(20);
+    cout<<"#points: " <<Point::getCounter()<<endl;
 
     return 0;
 }

@@ -42,13 +42,13 @@ int main() {
 //    cout << maxi.first << " " << maxi.second;
 
 
-//    istringstream iss("1 2 3 alma 4");
-//    double number;
-//    while(iss >> number){
-//        cout<<number<<endl;
-//    }
+    istringstream iss("1 2 3 alma 4");
+    double number;
+    while(iss >> number){
+        cout<<number<<endl;
+    }
 
-//    cout << sum() << "\n";
+    cout << sum() << "\n";
 
     string text;
     getline(cin, text);
